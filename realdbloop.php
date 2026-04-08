@@ -5,13 +5,14 @@ $users = [
     ["id" => 3, "name" => "Suman", "email" => "suman@gmail.com", "status" => "active"],
 ];
 
-
+echo "<table border='1'>";
+      
 foreach($users as $user){
+   echo "<tr>";
    foreach($user as $key => $val){
-    echo $key." is ".$val;
-    echo "<br>";
+    echo "<td>".$val."</td>";
    }
-    echo "<br>";
+    echo "</tr>";
 }
-
+echo "</table>";
 ?>
