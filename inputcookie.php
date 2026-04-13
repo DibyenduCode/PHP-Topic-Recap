@@ -32,11 +32,12 @@ if(isset($_REQUEST["view"])){
         echo $_COOKIE["user_name"];
        
     }else{
-         echo "No Cookie Set,Please set a Coolie";
+         echo "No Cookie Set,Please set a Cookie";
     }  
 }
 if(isset($_REQUEST["del"])){
 setcookie("user_name","",time()-3600);
 echo "Cookie Delete Success";
 }
+
 ?>
