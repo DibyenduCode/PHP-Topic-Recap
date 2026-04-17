@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="form.php" method="post">
+        <label>Name</label><input type="text" name="name">
+        <br>
+        <br>
+        <label>Email</label><input type="email" name="email">
+        <br>
+        <br>
+        <label>Password</label><input type="password" name="pass">
+        <br>
+        <br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male"><pri>Male</pri>
+        <input type="radio" name="gender" value="female"><pri>Female</pri>
+        <br>
+        <br>
+        <label>Skills</label>
+        <input type="checkbox" name="skill[]" value="html"><pri>Html</pri>
+        <input type="checkbox" name="skill[]" value="css"><pri>CSS</pri>
+        <input type="checkbox" name="skill[]" value="JavaScript"><pri>JavaScript</pri>
+        <input type="checkbox" name="skill[]" value="PHP"><pri>PHP</pri>
+        <br>
+        <br>
+        <label>City</label>
+        <select name="city">
+            <option>Select City</option>
+            <option value="gobardanga">Gobardanga</option>
+            <option value="Hbara">Hbara</option>
+            <option value="kolkta">Kolkata</option>
+            <option value="delhi">Delhi</option>
+            <option value="bangaon">Bangaon</option>
+        </select>
+        <br>
+        <br>
+        <label>Boi</label>
+        <textarea name="bio"></textarea>
+        <br>
+        <br>
+        <button>Sign Up</button>
+    </form>
+</body>
+</html>
