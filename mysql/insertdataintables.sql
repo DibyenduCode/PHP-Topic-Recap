@@ -1,0 +1,1 @@
+INSERT INTO students(name, class, course, year) VALUES("Subhas","12","React native","2026");
