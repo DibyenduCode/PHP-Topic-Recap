@@ -23,4 +23,10 @@ echo "</tr>";
 }
 
 echo "</table>";
+
+$getteacher=$conn->prepare("SELECT * FROM teachers");
+$getteacher->execute();
+$allteacherdata=$getteacher->fetchAll();
+
+print_r($allteacherdata);
 ?>
