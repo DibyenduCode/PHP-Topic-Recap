@@ -3,7 +3,7 @@ include "conn.php";
 $getdata= $conn->prepare("SELECT * FROM students");
 $getdata->execute();
 $alldata=$getdata->fetchAll();
-
+echo "<h3>Student</h3>";
 echo "<table border>";
 echo "<tr>";
 echo "<th>Name</th>";
@@ -28,5 +28,23 @@ $getteacher=$conn->prepare("SELECT * FROM teachers");
 $getteacher->execute();
 $allteacherdata=$getteacher->fetchAll();
 
-print_r($allteacherdata);
+
+echo "<h3>Teacher</h3>";
+echo "<table border>";
+echo "<tr>";
+echo "<th>Name</th>";
+echo "<th>Subject</th>";
+echo "<th>Designetion</th>";
+echo "</tr>";
+
+
+foreach($allteacherdata as $teacher){
+echo "<tr>";
+echo "<td>".$teacher["Name"]."</td>";
+echo "<td>".$teacher["Subject"]."</td>";
+echo "<td>".$teacher["Designetion"]."</td>";
+echo "</tr>";
+}
+
+echo "</table>";
 ?>
